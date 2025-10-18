@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
     "outDir": "./build/",
+    "baseUrl": ".",
+    "ignoreDeprecations": "5.0",
     "noImplicitAny": true,
     "module": "nodenext",
     "target": "es5",
