@@ -1,13 +1,12 @@
-import { createRoot } from 'react-dom/client';
-
-const container = document.getElementById('root');
-const root = createRoot(container);
-
+import {createRoot} from 'react-dom/client'
+import {Counter} from "./components/counter"
 
 export default function App () {
   return (
-    <div>This is react component</div>
+    <Counter/>
   )
 }
+  
 
-root.render(<App />)
+const root = createRoot(document.getElementById('root'));
+root.render(<App/>)
