@@ -2,9 +2,9 @@
   "compilerOptions": {
     "outDir": "./build/",
     "paths": {
-      "*": ["./src/*"]
+      "*": ["./src/*"],
+      "include": ["./declaration.d.ts"],
     },
-    "ignoreDeprecations": "5.0",
     "noImplicitAny": true,
     "module": "nodenext",
     "target": "es5",
@@ -12,6 +12,6 @@
     "allowJs": true,
     "moduleResolution": "nodenext",
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
   }
 }
