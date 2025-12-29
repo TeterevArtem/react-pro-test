@@ -16,7 +16,7 @@ export const buildLoaders = (  options: BuildOptions
                 options: {
                     esModule: true,
                     modules: {
-                        namedExport: false,
+                        namedExport: false, //отключает именнованный импорт потому что начиная с 6 версии он включен автоматом и в реакте он не нужен
                         auto: (resPath: string) => Boolean(resPath.includes('.module.')),
                         localIdentName: isDev ? '[path][name]__[local]' : '[hash:base64:8]'
                     },
